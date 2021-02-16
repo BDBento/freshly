@@ -1,0 +1,28 @@
+header{
+    display: block;
+    width: 80vw;
+    margin: 30px auto;
+}
+
+#logo-p{
+    position: relative;
+    top: 25px;
+
+}
+
+nav{
+    display: block;
+    text-align: right;
+
+}
+
+li{
+    display: inline;
+    margin-left:20px ;
+    font-size: 24px;
+}
+
+nav:hover{
+  
+
+}
