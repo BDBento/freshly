@@ -1,8 +1,10 @@
-header{
+header ,main{
     display: block;
-    width: 80vw;
-    margin: 30px auto;
+    width: 70vw;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 #logo-p{
     position: relative;
@@ -18,11 +20,88 @@ nav{
 
 li{
     display: inline;
-    margin-left:20px ;
+    margin-left:30px;
     font-size: 24px;
+    
 }
 
-nav:hover{
-  
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover{
+  color: brown;
+  padding-bottom: 20px;
+  border-bottom: solid #EF4C00 4px; 
 
 }
+
+#botao-itens{
+    background-color: #EF4C00;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 3px 40px ;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.frase-inicial{
+    display: block;
+    width: 70vw;
+    margin: 22px auto;
+    padding-top: 50px;
+    border-top: solid gray 1px;
+}
+
+#texto-frase{
+    font-size: 32px;
+
+}
+
+#autor-frase{
+    font-size: 28px;
+    color: #EF4C00;
+    font-weight: 900;
+    text-align: right;
+
+}
+
+.banner ,.banner2{
+    display: block;
+    height: 500px;
+    border-radius: 50px;
+    margin: 50px auto;
+}
+
+.banner{
+    background-image: url(https://images.memphistours.com/xlarge/f8a48d7c0365107b1b9c35a2af04ca8f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: local;
+}
+
+.banner2{
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+#text-banner{
+    color: #ffffff;
+    font-size: 52px;
+    margin: 50px 100px;
+    padding-top:100px ;
+}
+
+.app{
+    margin: 50px 100px;
+}
+
+.app img{
+    margin: 5px 10px;
+    border-radius: 10px;
+
+}
+
+
