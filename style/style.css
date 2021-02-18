@@ -67,12 +67,17 @@ li a:hover{
 
 }
 
+/*
 .banner ,.banner2{
     display: block;
-    height: 500px;
+    
     border-radius: 30px;
     margin: 50px auto;
 }
+
+/*banner  dentro do grid*/
+
+
 
 .banner{
     background-image: url(https://images.memphistours.com/xlarge/f8a48d7c0365107b1b9c35a2af04ca8f.jpg);
@@ -80,10 +85,17 @@ li a:hover{
     background-size: cover;
     background-position: right;
     background-attachment: local;
+    border-radius: 30px;
+    width: 100%;
+    grid-area: banner;
 }
 
 .banner2{
     background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 30px;
+    height: 450px;
+    position: relative;
+    top: -50px;
 }
 
 #text-banner{
@@ -103,105 +115,99 @@ li a:hover{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.anuncio1{
-    background-color: #EF4C00;
+.anuncio1 ,.anuncio2,.anuncio3,.anuncio4,.anuncio5,.anuncio6,.relogio , .entrega{
     width: 100%;
-    height: 200px;
-    border-radius: 20px;
+    border-radius: 40px;
+    border: solid rgba(185, 185, 185, 0.514) 0.5px;   
+}
+.anuncio1{
     grid-area: anuncio1;
 }
 
 .anuncio2{
-    background-color: #afef00;
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
     grid-area: anuncio2;
 }
 .anuncio3{
-    background-color: #00ef00;
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
     grid-area: anuncio3;
 }
 
-#popular{
-    background-color: darkgray;
-    width: 100%;
-    font-size: 32px;
-    color: #B30733;
-    font-weight: 900;
-}
-
 .anuncio4{
-    background-color: #0010ef;
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
     grid-area: anuncio4;
 }
 
 .anuncio5{
-    background-color: #db00ef;
-    width: 100%;
-    border-radius: 20px;
     grid-area: anuncio5;
 }
 
 .anuncio6{
-    background-color: #ef0020;
-    width: 100%;
-    border-radius: 20px; 
     grid-area: anuncio6;
 }
 
 
+#popular{
+    width: 100%;
+    font-size: 32px;
+    color: #B30733;
+    font-weight: 900;
+    grid-area: popular;
+}
+.relogio{
+    background-color: darkgray;
+    font-size: 32px;
+    font-weight: 900;
+    grid-area: relogio;
+}
+.entrega{
+    font-size: 32px;
+    font-weight: 900;
+    grid-area: entrega;
+}
+
+
+
+
 .container{
     display: grid;
-    grid-template-columns:repeat(380px,200px);
+    width: 120%;
+    grid-template-columns:2fr 2fr 2fr 1fr ;
+    grid-template-rows: 450px 1fr 30px 1fr;
     grid-gap: 50px;
     justify-content: space-evenly;
     grid-template-areas:
+    "banner"
     "anuncio1"
     "anuncio2"
     "anuncio3"
-    "popular"
     "anuncio4"
     "anuncio5"
     "anuncio6"
+    "popular"
+    "relogio"
+    "entrega"
     ;
 }
 
 @media (min-width: 400px){
     .container{
       grid-template-areas:
-        "anuncio1 anuncio2 anuncio3"
-        "popular popular popular"
-        "anuncio4 anuncio5 anuncio6"
+        "banner banner banner ."
+        "anuncio1 anuncio2 anuncio3 relogio"
+        "popular popular popular entrega"
+        "anuncio4 anuncio5 anuncio6 entrega"
         ;
      
-  }
+    }
 
-.container img{
-    border-radius: 20px 20px 0 0; 
-    width: 100%;
-    margin: 0 auto;
+    .container .anun{
+        border-radius: 20px 20px 0 0; 
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container p{
+        margin:20px auto auto 20px;
+    }
+
 }
 
-.container p{
-    margin:20px auto auto 20px;
-}
 
