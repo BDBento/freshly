@@ -128,6 +128,7 @@ li a:hover{
 .lista1 nav{
     display: block;
     text-align: right;
+    margin: 50px 50px 0px 0px;
 }
 
 .lista1 li{
@@ -142,25 +143,59 @@ li a:hover{
     text-decoration: none;
 }
 
+.busca{
+    margin-top: -50px;
+    text-align: right;
+}
+#campo_busca{
+    border: 1px solid;
+    border-radius:30px; 
+    color:#C0C0C0;
+    padding: 10px 90px 10px 90px;
+}
+
+.buscar_produto{
+    border: 1px solid;
+    border-radius:30px; 
+    color:#C0C0C0;
+    padding: 25px 20px 15px 20px;
+
+
+}
 
 #botao-itens{
     background-color: rgba(185, 185, 185, 0.212);
     color: rgb(139, 139, 139);
     font-size: 18px;
-    padding: 3px 40px ;
+    padding: 8px 40px ;
     border-radius: 50px;
 
 }
 
+#botao-itens:hover{
+    background-color: rgba(185, 185, 185, 0.534);
 
+}
 
+#laranja{
+    background-color:#EF4C00 ;
+    color: #000000;
+    font-size: 18px;
+    padding: 8px 40px ;
+    border-radius: 50px;
+    border: none;
+}
 
+#laranja:hover{
+    background-color:#ff8f5b;
+   
+}
 
-
-
-
-
-
+.pesquisa1 li a:hover{
+    border-bottom: none; 
+    pointer-events: painted;
+  
+  }
 
 
 .anuncio1 ,.anuncio2,.anuncio3,.anuncio4,.anuncio5,.anuncio6,.relogio {
@@ -168,7 +203,6 @@ li a:hover{
     height: 380px;
     border-radius: 40px;
     border: solid rgba(185, 185, 185, 0.514) 0.5px;  
-    
     font-size: 24px;
 }
 
@@ -243,7 +277,7 @@ li a:hover{
     display: grid;
     width: 120%;
     grid-template-columns:2fr 2fr 2fr 1fr ;
-    grid-template-rows: 450px 80px 2fr 30px 2fr;
+    grid-template-rows: 450px 90px 2fr 30px 2fr;
     grid-gap: 50px;
     justify-content: space-evenly;
     grid-template-areas:
@@ -306,7 +340,7 @@ li a:hover{
         width: 100%;
         margin: 10px auto;
         grid-template-columns:1fr ;
-        grid-template-rows: 450px 80px 2fr 2fr 2fr 30px 2fr 2fr 2fr ;
+        grid-template-rows: 450px 500px 2fr 2fr 2fr 30px 2fr 2fr 2fr ;
         grid-template-areas:
                         "banner"
                         "lista1"
@@ -321,7 +355,19 @@ li a:hover{
                         "entrega"
 
     }
-
+    
+    nav{
+        display: block;
+        text-align: center;
+    
+    }
+    
+    li{
+        display: block;
+        padding-top: 2em;
+  
+        
+    }
 
     .banner{  
         border-radius: 0px;
@@ -338,7 +384,22 @@ li a:hover{
         padding-top:100px ;
     }
 
+    .busca{
+        margin-top: 30px;
+        text-align: center;
+    }
 
+
+    .lista1 nav{
+        display: block;
+        text-align: left;
+    }
+    
+    .lista1 li{
+        display: block;
+        padding-top: 1em;
+        
+    }
 
 }
 
